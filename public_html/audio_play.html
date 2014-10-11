@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <!DOCTYPE html>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular.min.js"></script>
+     <script>
+   angular.module('textInputExample', [])
+     .controller('ExampleController', ['$scope', function($scope) {
+       
+       $scope.word = /^\s*\w*\s*$/;
+     }]);
+ </script>
+
+<body ng-app="textInputExample">
+
+<audio controls>
+   <source src="media/2514.mp3" type="audio/mpeg">
+   
+</audio>
+<br>
+ <form name="myForm" ng-controller="ExampleController">
+   Please provide the caption: <input type="text" name="input" ng-model="text"
+                       ng-pattern="word" required ng-trim="false"><br>
+   <span class="error" ng-show="myForm.input.$error.required">
+     Required!</span>
+  
+   <tt>text = {{text}}</tt><br/>
+   <input type="submit">
+ 
+
+  </form>
+</body>
+</html>
+
+</html>
