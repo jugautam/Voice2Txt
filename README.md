@@ -4,7 +4,7 @@ Through using AUDIO CAPTCHAS in different websites, we want to create a big Data
 
 With this, we totally automate the currently subtitling work process, we also increase the accuracy of the subtitles and we open the door for further translation of the subtitle(once is completed) to another language. It's a WIN-WIN business model, in which people contribute to the subtitling and we make the subtitle possible. We would also OpenSource the database to create an ecosystem for other applications to be built using it.
 
-Dependendancies
+Dependencies
 ===================
 1. NodeJS
 2. MeteorJS
