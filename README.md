@@ -1,14 +1,14 @@
 Audio2Txt
 ==========
-Through using AUDIO CAPTCHAS in different websites, we want to create a big Database where a TEXT WORD (The one typed by the captcha user) is linked to a fingerprint of an AUDIO FILE (The one played on the captcha). But Why? .....We want to create subtitles for the media, by matching the audio word's fingerprints from a video, to the fingerprints in our Database, so we will be able to display the subtitles in Real Time or with minimal latency. By having human contribution in this process, we factor in the accent and tones with which words are spoken. 
+Through using AUDIO CAPTCHA, in different websites, we want to create a big Database where a TEXT WORD (The one typed by the captcha user) is linked to a fingerprint of an AUDIO FILE (The one played on the captcha). But Why? .....We want to create subtitles for the media, by matching the audio word's fingerprints from a video, to the fingerprints in our Database, so we will be able to display the subtitles in Real Time or with minimal latency. By having human contribution in this process, we factor in the accent and tones with which words are spoken.
 
 With this, we totally automate the currently subtitling work process, we also increase the accuracy of the subtitles and we open the door for further translation of the subtitle(once is completed) to another language. It's a WIN-WIN business model, in which people contribute to the subtitling and we make the subtitle possible. We would also OpenSource the database to create an ecosystem for other applications to be built using it.
 
-Dependencies
-===================
-1. NodeJS
-2. MeteorJS
-3. fpcalc command-line tool 
+Components
+============
+1. MobilePrototype - A mimicking demo of the idea as an android application
+2. WebMockUp - A static UI prototype of the web interface
+3. NodeJSApplication - A work in progress of the web application built using NodeJS
 
 Way it works
 =======
@@ -25,4 +25,9 @@ Way it works
   3. This fingerprint is searched for a match from the sample database
   4. If its a match, then the text is returned back and a subtitle is constructed.
   5. The subtitle which is in the form of a text is translated into other languages through machine translation
-  
+
+  Dependencies
+  ===================
+  1. NodeJS
+  2. MeteorJS
+  3. fpcalc command-line tool
